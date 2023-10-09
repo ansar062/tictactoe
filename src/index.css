@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: "fuggles";
+    src: url('../src/assets/Fuggles-Regular.ttf');
+}
+
+
+@layer components{
+    .grandient_btn{
+        @apply bg-[linear-gradient(to_right,#ff6e7f_0%,#bfe9ff_51%,#ff6e7f_100%)] text-center uppercase transition-[0.5s] bg-[200%_auto] text-[white] shadow-[0_0_20px_#eee] block m-2.5 px-[45px] py-[15px]  rounded-[10px] hover:bg-[right_center] hover:text-white hover:no-underline;
+    }
+     
+}
+
+@layer components{
+    .delete_btn{
+        @apply bg-[linear-gradient(to_right,#ECE9E6_0%,#FFFFFF_51%,#ECE9E6_100%)] text-center uppercase transition-[0.5s] bg-[200%_auto] text-[black] shadow-[0_0_20px_#eee] block m-2.5 px-[45px] py-[15px] rounded-[10px] hover:bg-[right_center] hover:text-black hover:no-underline;
+    }
+}
